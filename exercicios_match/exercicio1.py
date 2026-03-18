@@ -14,11 +14,11 @@ Escolha.
 '''
 
 print("---------- MENU DE OPÇÕES ----------")
-print("1) Caneta -> R$ 1.20")
-print("2) Lápis -> R$ 0.80")
-print("3) Caderno -> R$ 4.50")
-print("4) Borracha -> R$ 1.00")
-print("5) Régua -> R$ 1.50")
+print("1) Caneta")
+print("2) Lápis")
+print("3) Caderno")
+print("4) Borracha")
+print("5) Régua")
 
 opcao = int(input("Digite o número da sua opção: "))
 
@@ -27,3 +27,11 @@ match opcao:
         print("Preço: R$ 1.20")
     case 2:
         print("Preço: R$ 0.80")
+    case 3:
+        print("Preço: R$ 4.50")
+    case 4:
+        print("Preço: R$ 1.00")
+    case 5:
+        print("Preço: R$ 1.50")
+    case _:
+        print("Item não identificado.")
