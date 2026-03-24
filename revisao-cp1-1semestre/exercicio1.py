@@ -14,8 +14,7 @@ if horas_trabalhadas > 160:
     horas_extras = horas_trabalhadas - 160
     valor_extras = horas_extras * salario_por_hora * 1.5
     salario_total = valor_extras + valor_regular
-    print(f"O salário total é R$ {salario_total}.")
 else:
-    valor_regular = salario_por_hora * horas_trabalhadas
-    print(f"O salario total é R$ {valor_regular}.")
+    salario_total = salario_por_hora * horas_trabalhadas
     
+print(f"O salário total é R$ {round(salario_total, 2)}.")
